@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SeatFinder</title>
+</head>
+
+<body style="background-color:skyblue">
+  <h1 style="color: blue">SeatFinder</h1>
+  <img src="{{ url_for('static', filename='img/index.jpeg') }}" alt="">
+
+  <p>Track your exam sitting arrangment easily!!! </p>
+  <form action="/" method="POST">
+    <label>Enter VTU No:</label>
+    <input name="text">
+    <input type="submit" value="Find">
+
+  </form>
+  <pre>{{content}}</pre>
+  
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+</body>
+
+</html>

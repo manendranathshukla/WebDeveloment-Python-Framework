@@ -14,14 +14,14 @@
   <h1 style="color: blue">SeatFinder</h1>
   <img src="{{ url_for('static', filename='img/index.jpeg') }}" alt="">
 
-  <p>Track your exam sitting arrangment easily!!! </p>
+  <h2>Track your exam sitting arrangment easily!!! </h2>
   <form action="/" method="POST">
-    <label>Enter VTU No:</label>
+    <label><h2>Enter VTU No:</h2></label>
     <input name="text">
     <input type="submit" value="Find">
 
   </form>
-  <pre>{{content}}</pre>
+  <pre><h2>{{content}}</h2></pre>
   
   <script src="{{ url_for('static', filename='js/app.js') }}"></script>
 

@@ -20,7 +20,7 @@ def index():
 @app.route('/', methods=['POST'])
 def get_vtu_no():
     vtuno=request.form['text']
-    text = open('app/seat_data.txt','r+')
+    text = open('app/static/data/uploads/seatplanning.csv','r+')
     #content = text.read()
     #text.close()
     #procesed=("Dear Student %s,You don't have any exam today,go attend ur classes.\n Thank You!!!"%vtuno)

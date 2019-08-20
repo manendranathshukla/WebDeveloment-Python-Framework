@@ -11,7 +11,7 @@ Using Flask Framework I developed a small webapp for Find Seating Arrangment.
 #run home.py to start the application and copy the local serverlink and paste it to webbrowser .. to access the weabapp...
 install the reauirement file directly at a time ....
 
-For Demo:visit mysite  
+For Demo:visit mysite  http://vtu10547.pythonanywhere.com/
 
 
-vtu10547.pythonanywhere.com
+

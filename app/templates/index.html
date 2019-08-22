@@ -2,29 +2,66 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+  <style>
+  input[type=submit] {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 7px 32px;
+  text-decoration:none;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SeatFinder</title>
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/logo.png') }}" />
 </head>
 
-<body style="background-color:skyblue">
+<body>
   <h1 style="color: blue">SeatFinder</h1>
-  <img src="{{ url_for('static', filename='img/index.jpeg') }}" alt="">
 
-  <h2>Track your exam sitting arrangment easily!!! </h2>
+
+  <h2>Track your exam seating arrangment </h2>
   <form action="/" method="POST">
-    <label><h2>Enter VTU No:</h2></label>
+  <span class="input-group-addon"><strong>Select Department:</strong></span>
+            <select name="comp_select" class="selectpicker form-control">
+              <option value="CSE">CSE</option>
+              <option value="CIVIL">CIVIL</option>
+              <option value="AERO">AERO</option>
+              <option value="EEE">EEE</option>
+              <option value="ECE">ECE</option>
+              <option value="MECH">MECH</option>
+              <option value="IT">IT</option>
+            </select>
+    <br>
+    <label><strong>   Select Exam Date:</strong></label>
+    <input type="date" name="examdate">
+    <br>
+    <label><strong>Enter VTU No:</strong></label>
     <input name="text">
     <input type="submit" value="Find">
 
-  </form>
-  <pre><h2>{{content}}</h2></pre>
-  
-  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
 
+  </form>
+
+  <pre><h2> {{exa}}
+ {{newOption}}
+{{content}}</h2></pre>
+
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+  <footer>
+  <div>
+   <h3 style="color:red">Developed by: Manendra Nath Shukla</h3>
+
+   <p>Contact information: <a href="shuklamanendranath@gmail.com">
+   shuklamanendranath@gmail.com</a></p>
+ </div>
+ </footer>
 </body>
 
 </html>

@@ -1,3 +1,56 @@
 body {
-  background-color: light-blue;
+  background-image:url("main.jpg");
+
+  text-align: center;
+}
+h1
+{
+  font-size: 60px;
+
+}
+span{
+  font-size: 20px;
+}
+button
+{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+pre {
+  color: black;
+  font-weight: bold;
+
+  text-align: justify;
+    margin: 0 auto;
+    width: 30em;
+
+}
+
+
+h2
+{
+  font-size: 30px;
+  color: darkgreen
+}
+label{
+  font-size: 20px;
+  text-align: justify;
+}
+
+
+footer{
+  position: fixed;
+  left: 0;
+  height: 90px;
+  bottom: 0;
+  width: 100%;
+  background-color: #cccc;
+  color: white;
+  text-align: center;
 }

@@ -70,7 +70,7 @@ six==1.11.0
 SQLAlchemy==1.1.11
 tensorboard==1.12.0
 tensorflow==1.12.0
-tensorflow-gpu==1.12.0
+tensorflow-gpu==2.3.1
 termcolor==1.1.0
 torbrowser-launcher==0.2.9
 Twisted==17.9.0
